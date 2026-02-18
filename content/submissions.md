@@ -1,5 +1,5 @@
 +++
-title = "Submit"
+title = "Submissions"
 +++
 
 Have something for StationeryObject?

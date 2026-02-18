@@ -14,20 +14,20 @@ title = "StationeryObject"
 
 [menu]
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Home"
+    url = "/"
     weight = 10
   [[menu.main]]
-    name = "Search"
-    url = "/search/"
+    name = "Submissions"
+    url = "/submissions/"
     weight = 20
   [[menu.main]]
     name = "Archive"
     url = "/archive/"
     weight = 30
   [[menu.main]]
-    name = "Submit"
-    url = "/submit/"
+    name = "About"
+    url = "/about/"
     weight = 40
 
 [taxonomies]

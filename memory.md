@@ -13,7 +13,7 @@
 ## Product Scope
 - Home page shows a chronological post feed.
 - RSS feed is available for posts.
-- Navigation includes About, Search, Archive, and Submit.
+- Navigation includes Home, Submissions, Archive, and About.
 - Search is client-side against a Hugo-generated JSON index.
 - Archive page lists posts grouped by month.
 
