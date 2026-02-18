@@ -33,9 +33,13 @@ Always isolate Wrangler per repo:
 
 ## Cloudflare Pages Safety
 
-- Use Pages project slug: `StationeryObject`.
-- Prefer GitHub-connected Pages deploys from `main`.
-- Do not deploy stale local build artifacts as production source of truth.
+- Use Pages project slug: `stationeryobject`.
+- Production deploy authority is GitHub Actions from `main`.
+- Preview deploy authority is GitHub Actions from `Staging`.
+- Required GitHub secrets:
+  - `CLOUDFLARE_API_TOKEN`
+  - `CLOUDFLARE_ACCOUNT_ID`
+  - `CLOUDFLARE_PAGES_PROJECT` (`stationeryobject`)
 
 ## Stop Conditions
 

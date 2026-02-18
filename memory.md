@@ -25,12 +25,13 @@
 - Archive page renderer: `layouts/archive/single.html`
 
 ## Cloudflare Pages
-- Project name: `StationeryObject`
+- Project name: `stationeryobject` (display name: StationeryObject)
 - GitHub account for this repo: `rstephens1`
 - Cloudflare account for this repo: `rstephens1@gmail.com`
 - Suggested production branch: `main`
 - Build command: `hugo --gc --minify`
 - Build output directory: `public`
+- CI deploy workflow: `.github/workflows/deploy-pages.yml`
 
 ## Update policy
 - Keep this file updated as stack, deploy settings, and structure change.
