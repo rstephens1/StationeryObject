@@ -1,0 +1,35 @@
+baseURL = "https://stationeryobject.pages.dev/"
+languageCode = "en-us"
+title = "StationeryObject"
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  description = "A blog about notes, objects, and process."
+  mainSections = ["posts"]
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 20
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
+    weight = 30
+  [[menu.main]]
+    name = "Submit"
+    url = "/submit/"
+    weight = 40
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

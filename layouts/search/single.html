@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section>
+  <h1>{{ .Title }}</h1>
+  <label for="q">Search posts</label>
+  <input id="q" type="search" placeholder="Type to search..." autocomplete="off">
+  <ul id="results" class="results"></ul>
+</section>
+<script>
+(async function () {
+  const input = document.getElementById('q');
+  const results = document.getElementById('results');
+  const idx = await fetch('{{ "/index.json" | relURL }}').then(r => r.json()).catch(() => []);
+
+  function render(items) {
+    results.innerHTML = items.map(item =>
+      `<li><a href="${item.permalink}">${item.title}</a><p>${item.summary || ''}</p></li>`
+    ).join('');
+  }
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q) { results.innerHTML = ''; return; }
+    const filtered = idx.filter(item => {
+      return (item.title || '').toLowerCase().includes(q) || (item.summary || '').toLowerCase().includes(q);
+    });
+    render(filtered.slice(0, 30));
+  });
+})();
+</script>
+{{ end }}

@@ -1,0 +1,6 @@
+.wrangler-home/
+.wrangler/
+node_modules/
+.DS_Store
+public/
+.hugo_build.lock

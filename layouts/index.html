@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section>
+  <h1>Recent Posts</h1>
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ range first 15 $posts.ByDate.Reverse }}
+    <article class="feed-item">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>
+      {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+    </article>
+  {{ else }}
+    <p>No posts yet.</p>
+  {{ end }}
+</section>
+{{ end }}
