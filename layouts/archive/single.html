@@ -1,16 +1,25 @@
 {{ define "main" }}
-<section>
+<section class="archive-wrap">
   <h1>{{ .Title }}</h1>
-  {{ $posts := where .Site.RegularPages "Section" "posts" }}
-  {{ range $posts.GroupByDate "January 2006" }}
-    <h2>{{ .Key }}</h2>
-    <ul>
-      {{ range .Pages.ByDate.Reverse }}
-        <li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  <div class="archive-list" aria-label="Archive feed">
+    {{ $posts := where .Site.RegularPages "Section" "posts" }}
+    {{ range $group := $posts.GroupByDate "January 2006" }}
+      <h2 class="archive-month">{{ upper $group.Key }}</h2>
+      {{ range $group.Pages.ByDate.Reverse }}
+        <article class="archive-row">
+          <div class="archive-copy">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+            <p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time></p>
+          </div>
+          <a class="archive-media" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">
+            {{ partial "post-image.html" (dict "page" . "index" 1 "class" "archive-image" "sizes" "(min-width: 980px) 24vw, 94vw") }}
+          </a>
+        </article>
       {{ end }}
-    </ul>
-  {{ else }}
-    <p>No archived posts yet.</p>
-  {{ end }}
+    {{ else }}
+      <p>No archived posts yet.</p>
+    {{ end }}
+  </div>
 </section>
 {{ end }}

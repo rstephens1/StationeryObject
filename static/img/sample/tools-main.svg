@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1350" viewBox="0 0 1800 1350" fill="none">
+  <rect width="1800" height="1350" fill="#e8ddd0"/>
+  <rect x="140" y="160" width="1520" height="1030" fill="#f8f4ec"/>
+  <rect x="220" y="280" width="640" height="760" fill="#efe5d8"/>
+  <rect x="940" y="280" width="640" height="760" fill="#efe5d8"/>
+  <text x="190" y="230" fill="#5b4633" font-size="64" font-family="Georgia">StationeryObject Sample: Tool Note</text>
+</svg>

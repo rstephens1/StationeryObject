@@ -1,15 +1,50 @@
 {{ define "main" }}
-<section>
-  <h1>Recent Posts</h1>
-  {{ $posts := where .Site.RegularPages "Section" "posts" }}
-  {{ range first 15 $posts.ByDate.Reverse }}
-    <article class="feed-item">
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>
-      {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $ordered := $posts.ByDate.Reverse }}
+{{ if gt (len $ordered) 0 }}
+  {{ $featured := index $ordered 0 }}
+  {{ $rest := after 1 $ordered }}
+  <section class="home-grid" aria-label="Post feed">
+    <div class="feed-column side left">
+      {{ range $i, $post := $rest }}
+        {{ if eq (mod $i 2) 0 }}
+          <article class="feed-card side-card">
+            <a class="media-link" href="{{ $post.RelPermalink }}" aria-label="Read {{ $post.Title }}">
+              {{ partial "post-image.html" (dict "page" $post "index" 0 "class" "card-image" "sizes" "(min-width: 1200px) 22vw, 94vw") }}
+            </a>
+            <h2><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h2>
+            {{ with $post.Params.summary }}<p>{{ . }}</p>{{ end }}
+            <p class="meta"><time datetime="{{ $post.Date.Format "2006-01-02" }}">{{ $post.Date.Format "Jan 2" }}</time></p>
+          </article>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <article class="feed-card hero-card">
+      <a class="media-link" href="{{ $featured.RelPermalink }}" aria-label="Read {{ $featured.Title }}">
+        {{ partial "post-image.html" (dict "page" $featured "index" 0 "class" "hero-image" "sizes" "(min-width: 1200px) 52vw, 94vw") }}
+      </a>
+      <h1><a href="{{ $featured.RelPermalink }}">{{ $featured.Title }}</a></h1>
+      {{ with $featured.Params.summary }}<p class="hero-summary">{{ . }}</p>{{ end }}
+      <p class="meta"><time datetime="{{ $featured.Date.Format "2006-01-02" }}">{{ $featured.Date.Format "January 2, 2006" }}</time></p>
     </article>
-  {{ else }}
-    <p>No posts yet.</p>
-  {{ end }}
-</section>
+
+    <div class="feed-column side right">
+      {{ range $i, $post := $rest }}
+        {{ if eq (mod $i 2) 1 }}
+          <article class="feed-card side-card">
+            <a class="media-link" href="{{ $post.RelPermalink }}" aria-label="Read {{ $post.Title }}">
+              {{ partial "post-image.html" (dict "page" $post "index" 0 "class" "card-image" "sizes" "(min-width: 1200px) 22vw, 94vw") }}
+            </a>
+            <h2><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h2>
+            {{ with $post.Params.summary }}<p>{{ . }}</p>{{ end }}
+            <p class="meta"><time datetime="{{ $post.Date.Format "2006-01-02" }}">{{ $post.Date.Format "Jan 2" }}</time></p>
+          </article>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+{{ else }}
+  <section><p>No posts yet.</p></section>
+{{ end }}
 {{ end }}

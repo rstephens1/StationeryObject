@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1350" viewBox="0 0 1800 1350" fill="none">
+  <rect width="1800" height="1350" fill="#e9dfd2"/>
+  <rect x="180" y="180" width="1440" height="980" fill="#f7f2ea"/>
+  <line x1="290" y1="170" x2="290" y2="1180" stroke="#c8b7a3" stroke-width="12"/>
+  <text x="120" y="170" fill="#5b4633" font-size="64" font-family="Georgia">StationeryObject Sample: Deckle Edge</text>
+</svg>

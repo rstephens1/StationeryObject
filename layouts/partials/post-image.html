@@ -1,0 +1,47 @@
+{{- $p := .page -}}
+{{- $idx := .index | default 0 -}}
+{{- $class := .class | default "" -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $sizes := .sizes | default "100vw" -}}
+{{- $fallback := .fallback | default true -}}
+{{- $showCaption := .show_caption | default false -}}
+
+{{- $images := $p.Params.images -}}
+{{- $entry := false -}}
+{{- if and (reflect.IsSlice $images) (ge (len $images) (add $idx 1)) -}}
+  {{- $entry = index $images $idx -}}
+{{- end -}}
+{{- if and (not $entry) $fallback (reflect.IsSlice $images) (gt (len $images) 0) -}}
+  {{- $entry = index $images 0 -}}
+{{- end -}}
+
+{{- if $entry -}}
+  {{- $src := "" -}}
+  {{- $alt := $p.Title -}}
+  {{- $caption := "" -}}
+
+  {{- if reflect.IsMap $entry -}}
+    {{- with index $entry "src" -}}{{- $src = printf "%v" . -}}{{- end -}}
+    {{- with index $entry "alt" -}}{{- $alt = printf "%v" . -}}{{- end -}}
+    {{- with index $entry "caption" -}}{{- $caption = printf "%v" . -}}{{- end -}}
+  {{- else -}}
+    {{- $src = printf "%v" $entry -}}
+  {{- end -}}
+
+  {{- if $src -}}
+    {{- $resolved := $src -}}
+    {{- if and (not (hasPrefix $src "http://")) (not (hasPrefix $src "https://")) (not (hasPrefix $src "/")) -}}
+      {{- with $p.Resources.GetMatch $src -}}
+        {{- $resolved = .RelPermalink -}}
+      {{- else -}}
+        {{- $resolved = printf "/img/%s" $src -}}
+      {{- end -}}
+    {{- end -}}
+    <figure class="post-image {{ $class }}">
+      <img src="{{ $resolved }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async" sizes="{{ $sizes }}">
+      {{- if and $showCaption $caption -}}
+        <figcaption>{{ $caption }}</figcaption>
+      {{- end -}}
+    </figure>
+  {{- end -}}
+{{- end -}}

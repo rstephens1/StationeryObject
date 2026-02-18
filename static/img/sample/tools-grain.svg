@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1350" viewBox="0 0 1800 1350" fill="none">
+  <rect width="1800" height="1350" fill="#e6dacb"/>
+  <path d="M160 240C460 140 760 340 1060 240C1360 140 1560 340 1640 240" stroke="#bba992" stroke-width="6"/>
+  <path d="M160 420C460 320 760 520 1060 420C1360 320 1560 520 1640 420" stroke="#bba992" stroke-width="6"/>
+  <path d="M160 600C460 500 760 700 1060 600C1360 500 1560 700 1640 600" stroke="#bba992" stroke-width="6"/>
+  <text x="120" y="180" fill="#5b4633" font-size="64" font-family="Georgia">StationeryObject Sample: Fiber Texture</text>
+</svg>

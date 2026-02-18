@@ -4,6 +4,18 @@
   {{ if eq .Section "posts" }}
     <p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>
   {{ end }}
-  {{ .Content }}
+
+  {{ $images := .Params.images }}
+  {{ if and (reflect.IsSlice $images) (gt (len $images) 0) }}
+    <section class="post-gallery" aria-label="Post images">
+      {{ range $i, $_ := $images }}
+        {{ partial "post-image.html" (dict "page" $ "index" $i "class" "post-detail-image" "loading" "eager" "sizes" "(min-width: 980px) 78vw, 96vw" "fallback" false "show_caption" true) }}
+      {{ end }}
+    </section>
+  {{ end }}
+
+  <div class="post-body">
+    {{ .Content }}
+  </div>
 </article>
 {{ end }}

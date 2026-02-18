@@ -16,6 +16,8 @@
 - Navigation includes Home, Submissions, Archive, and About.
 - Search is client-side against a Hugo-generated JSON index.
 - Archive page lists posts grouped by month.
+- Archive rows are reverse-chronological with image on the right.
+- Archive prefers each post's second image (`images[1]`) and falls back to first.
 
 ## Layout and behavior
 - Base layout: `layouts/_default/baseof.html`
@@ -23,6 +25,13 @@
 - Content page renderer: `layouts/_default/single.html`
 - Search page renderer: `layouts/search/single.html`
 - Archive page renderer: `layouts/archive/single.html`
+- Shared image resolver partial: `layouts/partials/post-image.html`
+
+## Image workflow
+- Canonical image spec: `docs/image-spec.md`
+- Post front matter uses ordered `images` array with `src`, `alt`, and optional `caption`.
+- Preferred storage is page bundles (`content/posts/<slug>/` with images next to markdown).
+- `images[0]` is lead image for Home; `images[1]` is archive thumbnail.
 
 ## Cloudflare Pages
 - Project name: `stationeryobject` (display name: StationeryObject)
