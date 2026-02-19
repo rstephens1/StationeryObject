@@ -19,11 +19,13 @@
   {{- $src := "" -}}
   {{- $alt := $p.Title -}}
   {{- $caption := "" -}}
+  {{- $note := "" -}}
 
   {{- if reflect.IsMap $entry -}}
     {{- with index $entry "src" -}}{{- $src = printf "%v" . -}}{{- end -}}
     {{- with index $entry "alt" -}}{{- $alt = printf "%v" . -}}{{- end -}}
     {{- with index $entry "caption" -}}{{- $caption = printf "%v" . -}}{{- end -}}
+    {{- with index $entry "note" -}}{{- $note = printf "%v" . -}}{{- end -}}
   {{- else -}}
     {{- $src = printf "%v" $entry -}}
   {{- end -}}
@@ -39,8 +41,13 @@
     {{- end -}}
     <figure class="post-image {{ $class }}">
       <img src="{{ $resolved }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async" sizes="{{ $sizes }}">
-      {{- if and $showCaption $caption -}}
-        <figcaption>{{ $caption }}</figcaption>
+      {{- if $showCaption -}}
+        {{- if or $caption $note -}}
+          <figcaption>
+            {{- if $caption -}}<span class="image-caption">{{ $caption }}</span>{{- end -}}
+            {{- if $note -}}<span class="image-note">{{ $note }}</span>{{- end -}}
+          </figcaption>
+        {{- end -}}
       {{- end -}}
     </figure>
   {{- end -}}

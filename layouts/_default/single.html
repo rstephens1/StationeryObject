@@ -11,7 +11,9 @@
       {{ $count := len $images }}
       {{ range $i, $_ := $images }}
         {{ if eq (mod $i 2) 0 }}
-          <div class="post-pair-row">
+          {{ $pair := div $i 2 }}
+          {{ $variant := mod $pair 3 }}
+          <div class="post-pair-row {{ if eq $variant 0 }}is-emphasis-left{{ else if eq $variant 1 }}is-emphasis-right{{ else }}is-balanced{{ end }}">
             {{ partial "post-image.html" (dict "page" $ "index" $i "class" "post-detail-image" "loading" "eager" "sizes" "(min-width: 980px) 46vw, 96vw" "fallback" false "show_caption" true) }}
             {{ $j := add $i 1 }}
             {{ if lt $j $count }}

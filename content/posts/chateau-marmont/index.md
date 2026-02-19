@@ -13,6 +13,7 @@ caption = "Lead sheet"
 src = "02-letter.jpeg"
 alt = "Chateau Marmont letter detail"
 caption = "Primary letterhead"
+note = "Every CEO should do this: include a letter addressed personally and invite direct feedback."
 
 [[images]]
 src = "03-feedback.jpeg"
@@ -23,6 +24,7 @@ caption = "Direct feedback invitation"
 src = "04-cardstock.jpeg"
 alt = "Card stock close-up"
 caption = "Card stock face"
+note = "These note cards are laid paper on thick card stock."
 
 [[images]]
 src = "05-laid-paper.jpg"
@@ -33,6 +35,7 @@ caption = "Laid paper texture"
 src = "06-watermark.jpeg"
 alt = "Watermark detail"
 caption = "Watermark detail"
+note = "Bonus points for a visible watermark."
 
 [[images]]
 src = "07-tic.jpeg"
@@ -58,9 +61,3 @@ caption = "Envelope detail"
 Still among the most interesting hotels, and with some of the best stationery of all.
 
 This was the first piece I ever collected back in 1997 when Disney flew me to LA to pitch me on making a movie about The Geek Squad.
-
-Every CEO should do this: include a letter addressed to them personally, and invite real direct feedback.
-
-These are note cards as well, laid paper on thick card stock.
-
-Bonus points for a visible watermark.
