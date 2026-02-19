@@ -8,8 +8,17 @@
   {{ $images := .Params.images }}
   {{ if and (reflect.IsSlice $images) (gt (len $images) 0) }}
     <section class="post-gallery" aria-label="Post images">
+      {{ $count := len $images }}
       {{ range $i, $_ := $images }}
-        {{ partial "post-image.html" (dict "page" $ "index" $i "class" "post-detail-image" "loading" "eager" "sizes" "(min-width: 980px) 78vw, 96vw" "fallback" false "show_caption" true) }}
+        {{ if eq (mod $i 2) 0 }}
+          <div class="post-pair-row">
+            {{ partial "post-image.html" (dict "page" $ "index" $i "class" "post-detail-image" "loading" "eager" "sizes" "(min-width: 980px) 46vw, 96vw" "fallback" false "show_caption" true) }}
+            {{ $j := add $i 1 }}
+            {{ if lt $j $count }}
+              {{ partial "post-image.html" (dict "page" $ "index" $j "class" "post-detail-image" "loading" "eager" "sizes" "(min-width: 980px) 46vw, 96vw" "fallback" false "show_caption" true) }}
+            {{ end }}
+          </div>
+        {{ end }}
       {{ end }}
     </section>
   {{ end }}

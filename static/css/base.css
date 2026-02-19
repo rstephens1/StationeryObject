@@ -220,6 +220,18 @@ h1, h2, h3 {
   gap: 1rem;
 }
 
+.post-pair-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.post-detail-image img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
 .post-body {
   margin-top: 1.2rem;
   font-size: 1.26rem;
@@ -289,4 +301,8 @@ input[type="search"] {
 
   .archive-copy h3 { font-size: clamp(1.6rem, 8vw, 2.1rem); }
   .archive-copy p { font-size: 1.35rem; }
+
+  .post-pair-row {
+    grid-template-columns: 1fr;
+  }
 }
