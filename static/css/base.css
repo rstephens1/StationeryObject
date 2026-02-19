@@ -327,6 +327,19 @@ input[type="search"] {
   .archive-copy p { font-size: 1.35rem; }
 
   .post-pair-row {
-    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .post-gallery {
+    gap: 0.35rem;
+  }
+
+  .post-detail-image {
+    margin-bottom: 1rem;
+  }
+
+  .post-detail-image img {
+    aspect-ratio: auto;
+    object-fit: contain;
   }
 }

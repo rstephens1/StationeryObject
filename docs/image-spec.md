@@ -51,6 +51,14 @@ caption = "Watermark detail"
 
 You can also use absolute paths (`/img/...`) if image files are in `static/img`.
 
+### Ingest Rule For Inline Copy
+
+When source drafts are submitted with copy lines between image embeds, default mapping is:
+
+- Copy immediately following an image belongs to the image above it.
+- Store that copy in that image entry as `note`.
+- If there is ambiguity, ask before publishing.
+
 ## Export Targets
 
 For each image, export up to three sizes:
@@ -76,5 +84,6 @@ Suggested format:
 1. Crop and export derivatives.
 2. Place images in page bundle folder (preferred).
 3. Add `images` entries in front matter in display order.
-4. Set `summary` in front matter for feed/archive text.
-5. Run `hugo` and visually verify Home, Archive, and the post page.
+4. Map inline draft copy to image `note` fields using the default ingest rule.
+5. Set `summary` in front matter for feed/archive text.
+6. Run `hugo` and visually verify Home, Archive, and the post page.

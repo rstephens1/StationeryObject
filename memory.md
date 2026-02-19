@@ -30,8 +30,10 @@
 ## Image workflow
 - Canonical image spec: `docs/image-spec.md`
 - Post front matter uses ordered `images` array with `src`, `alt`, and optional `caption`.
+- Post front matter supports optional per-image `note` copy rendered under each image.
 - Preferred storage is page bundles (`content/posts/<slug>/` with images next to markdown).
 - `images[0]` is lead image for Home; `images[1]` is archive thumbnail.
+- Ingest rule: copy lines submitted between image embeds are assumed to belong to the image above unless clarified.
 
 ## Cloudflare Pages
 - Project name: `stationeryobject` (display name: StationeryObject)
