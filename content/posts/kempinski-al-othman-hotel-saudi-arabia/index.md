@@ -1,6 +1,6 @@
 +++
 title = "Kempinski Al Othman Hotel Saudi Arabia"
-date = 2026-02-18T19:52:04-08:00
+date = 2022-05-05
 draft = false
 summary = "Stationery collection from Kempinski Al Othman Hotel Saudi Arabia."
 

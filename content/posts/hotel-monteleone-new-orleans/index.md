@@ -1,6 +1,6 @@
 +++
 title = "Hotel Monteleone New Orleans"
-date = 2026-02-18T19:52:04-08:00
+date = 2022-10-31
 draft = false
 summary = "Stationery collection from Hotel Monteleone New Orleans."
 
@@ -8,7 +8,6 @@ summary = "Stationery collection from Hotel Monteleone New Orleans."
 src = "01-photo.jpg"
 alt = "Hotel Monteleone New Orleans stationery image 1"
 caption = "Image 1"
-
 +++
 **Location:** New Orleans, Louisiana, USA
 

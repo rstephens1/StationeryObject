@@ -1,6 +1,6 @@
 +++
 title = "Grand America Hotel Salt Lake City"
-date = 2026-02-18T19:52:04-08:00
+date = 2023-09-10
 draft = false
 summary = "Stationery collection from Grand America Hotel Salt Lake City."
 

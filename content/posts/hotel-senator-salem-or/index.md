@@ -1,6 +1,6 @@
 +++
 title = "Hotel Senator Salem OR"
-date = 2026-02-18T19:52:04-08:00
+date = 2026-01-12
 draft = false
 summary = "Stationery collection from Hotel Senator Salem OR."
 

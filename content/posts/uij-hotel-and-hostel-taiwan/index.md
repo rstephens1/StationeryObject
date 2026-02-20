@@ -1,6 +1,6 @@
 +++
 title = "UIJ Hotel & Hostel Taiwan"
-date = 2026-02-18T19:52:04-08:00
+date = 2023-08-18
 draft = false
 summary = "Stationery collection from UIJ Hotel & Hostel Taiwan."
 

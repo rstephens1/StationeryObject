@@ -1,6 +1,6 @@
 +++
 title = "IMPERIAL HOTEL"
-date = 2026-02-18T19:52:04-08:00
+date = 2025-06-18
 draft = false
 summary = "Stationery collection from IMPERIAL HOTEL."
 

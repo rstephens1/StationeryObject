@@ -1,6 +1,6 @@
 +++
 title = "The Taj Mahal Hotel New Delhi"
-date = 2026-02-18T19:52:04-08:00
+date = 2024-09-03
 draft = false
 summary = "Stationery collection from The Taj Mahal Hotel New Delhi."
 

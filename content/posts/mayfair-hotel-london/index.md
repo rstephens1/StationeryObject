@@ -1,6 +1,6 @@
 +++
 title = "Mayfair Hotel London"
-date = 2026-02-18T19:52:04-08:00
+date = 2022-10-03
 draft = false
 summary = "Stationery collection from Mayfair Hotel London."
 

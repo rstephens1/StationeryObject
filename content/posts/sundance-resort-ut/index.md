@@ -1,6 +1,6 @@
 +++
 title = "Sundance Resort UT"
-date = 2026-02-18T19:52:04-08:00
+date = 2024-01-30
 draft = false
 summary = "Stationery collection from Sundance Resort UT."
 

@@ -1,6 +1,6 @@
 +++
 title = "21C Hotel Bentonville"
-date = 2026-02-17
+date = 2024-06-11
 draft = false
 summary = "Stationery collection from 21C Hotel Bentonville."
 

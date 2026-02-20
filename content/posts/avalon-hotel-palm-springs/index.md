@@ -1,6 +1,6 @@
 +++
 title = "Avalon Hotel Palm Springs"
-date = 2026-02-18T19:52:04-08:00
+date = 2024-09-08
 draft = false
 summary = "Stationery collection from Avalon Hotel Palm Springs."
 

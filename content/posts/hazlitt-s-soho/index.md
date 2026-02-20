@@ -1,6 +1,6 @@
 +++
 title = "Hazlitt's SoHo"
-date = 2026-02-18T19:52:04-08:00
+date = 2025-06-02
 draft = false
 summary = "Stationery collection from Hazlitt's SoHo."
 

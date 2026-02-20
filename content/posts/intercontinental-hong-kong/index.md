@@ -1,6 +1,6 @@
 +++
 title = "Intercontinental Hong Kong"
-date = 2026-02-18T19:52:04-08:00
+date = 2024-06-12
 draft = false
 summary = "Stationery collection from Intercontinental Hong Kong."
 

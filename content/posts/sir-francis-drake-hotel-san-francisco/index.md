@@ -1,6 +1,6 @@
 +++
 title = "Sir Francis Drake Hotel San Francisco"
-date = 2026-02-18T19:52:04-08:00
+date = 2024-08-07
 draft = false
 summary = "Stationery collection from Sir Francis Drake Hotel San Francisco."
 

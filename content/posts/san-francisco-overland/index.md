@@ -1,6 +1,6 @@
 +++
 title = "San Francisco Overland 🚄"
-date = 2026-02-18T19:52:04-08:00
+date = 2024-03-31
 draft = false
 summary = "Stationery collection from San Francisco Overland 🚄."
 

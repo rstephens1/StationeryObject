@@ -1,6 +1,6 @@
 +++
 title = "Wynn Encore Las Vegas"
-date = 2026-02-18T19:52:04-08:00
+date = 2022-07-04
 draft = false
 summary = "Stationery collection from Wynn Encore Las Vegas."
 

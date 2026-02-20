@@ -1,6 +1,6 @@
 +++
 title = "Chateau Marmont"
-date = 2026-02-18T12:00:00-08:00
+date = 2023-12-17
 draft = false
 summary = "Still among the most interesting hotels, with some of the best stationery of all."
 location_display = "Los Angeles, California"

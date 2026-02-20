@@ -1,6 +1,6 @@
 +++
 title = "Streamliner City of San Francisco Train"
-date = 2026-02-18T19:52:04-08:00
+date = 2025-10-20
 draft = false
 summary = "Stationery collection from Streamliner City of San Francisco Train."
 

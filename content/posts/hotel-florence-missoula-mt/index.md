@@ -1,6 +1,6 @@
 +++
 title = "Hotel Florence Missoula MT"
-date = 2026-02-18T19:52:04-08:00
+date = 2025-02-14
 draft = false
 summary = "Stationery collection from Hotel Florence Missoula MT."
 

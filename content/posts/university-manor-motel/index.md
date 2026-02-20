@@ -1,6 +1,6 @@
 +++
 title = "University Manor Motel"
-date = 2026-02-18T19:52:04-08:00
+date = 2022-12-01
 draft = false
 summary = "Stationery collection from University Manor Motel."
 
@@ -8,7 +8,6 @@ summary = "Stationery collection from University Manor Motel."
 src = "01-photo.jpg"
 alt = "University Manor Motel stationery image 1"
 caption = "Image 1"
-
 +++
 **Location:** Buffalo, New York, USA
 

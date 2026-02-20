@@ -1,6 +1,6 @@
 +++
 title = "L'HOTEL GL. Aubrucheren Paris"
-date = 2026-02-18T19:52:04-08:00
+date = 2022-12-08
 draft = false
 summary = "Stationery collection from L'HOTEL GL. Aubrucheren Paris."
 
