@@ -8,6 +8,10 @@
   --line: #d7cdc0;
   --accent: #5b4633;
   --mark: #c76b18;
+  --link-text: currentColor;
+  --link-underline: rgba(0, 0, 0, 0.3);
+  --link-underline-hover: rgba(0, 0, 0, 0.5);
+  --link-focus: rgba(0, 0, 0, 0.18);
 }
 
 * { box-sizing: border-box; }
@@ -21,7 +25,44 @@ body {
 }
 
 a { color: inherit; text-decoration: none; }
-a:hover { text-decoration: underline; text-underline-offset: 0.13em; }
+
+.prose a,
+.content a,
+article .post-body a,
+.post-body a {
+  color: var(--link-text);
+  text-decoration-line: underline;
+  text-decoration-color: var(--link-underline);
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.12em;
+  text-decoration-skip-ink: auto;
+  transition: text-decoration-color 140ms ease;
+}
+
+@media (hover: hover) {
+  .prose a:hover,
+  .content a:hover,
+  article .post-body a:hover,
+  .post-body a:hover {
+    text-decoration-color: var(--link-underline-hover);
+  }
+}
+
+.prose a:visited,
+.content a:visited,
+article .post-body a:visited,
+.post-body a:visited {
+  color: var(--link-text);
+}
+
+.prose a:focus-visible,
+.content a:focus-visible,
+article .post-body a:focus-visible,
+.post-body a:focus-visible {
+  outline: 2px solid var(--link-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
 
 .shell {
   width: min(1280px, 94vw);
