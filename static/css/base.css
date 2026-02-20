@@ -152,10 +152,34 @@ h1, h2, h3 {
   font-size: 1.03rem;
 }
 
+.home-pager {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+.pager-link {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: color-mix(in hsl, var(--paper), white 28%);
+}
+
+.pager-link:hover {
+  text-decoration: none;
+  background: color-mix(in hsl, var(--paper), white 40%);
+}
+
 .card-image img,
-.hero-image img {
+.hero-image img,
+.archive-image img {
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center;
 }
 
 .archive-wrap h1 {
@@ -199,11 +223,6 @@ h1, h2, h3 {
   width: min(250px, 100%);
 }
 
-.archive-image img {
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
 .single {
   max-width: 960px;
   margin: 0 auto;
@@ -220,24 +239,33 @@ h1, h2, h3 {
   gap: 1rem;
 }
 
-.post-pair-row {
+.post-option-a {
+  display: grid;
+  gap: 1rem;
+}
+
+.post-detail-rail {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  align-items: start;
 }
 
-.post-pair-row.is-emphasis-left {
-  grid-template-columns: 1.3fr 0.7fr;
+.post-hero-image img {
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
-.post-pair-row.is-emphasis-right {
-  grid-template-columns: 0.7fr 1.3fr;
+.post-detail-card:nth-child(4n + 1) {
+  transform: translateY(0.15rem);
+}
+
+.post-detail-card:nth-child(4n + 3) {
+  transform: translateY(-0.15rem);
 }
 
 .post-detail-image img {
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .post-detail-image figcaption {
@@ -326,18 +354,10 @@ input[type="search"] {
   .archive-copy h3 { font-size: clamp(1.6rem, 8vw, 2.1rem); }
   .archive-copy p { font-size: 1.35rem; }
 
-  .post-pair-row {
-    display: block;
-  }
-
-  .post-gallery {
-    gap: 0.35rem;
-  }
-
-  .post-detail-image {
-    margin-bottom: 1rem;
-  }
-
+  .post-gallery { gap: 0.35rem; }
+  .post-detail-rail { grid-template-columns: 1fr; }
+  .post-detail-card { transform: none !important; }
+  .post-detail-image { margin-bottom: 1rem; }
   .post-detail-image img {
     aspect-ratio: auto;
     object-fit: contain;

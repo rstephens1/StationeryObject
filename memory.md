@@ -17,7 +17,7 @@
 - Search is client-side against a Hugo-generated JSON index.
 - Archive page lists posts grouped by month.
 - Archive rows are reverse-chronological with image on the right.
-- Archive prefers each post's second image (`images[1]`) and falls back to first.
+- Archive uses each post's first image (`images[0]`) for thumbnails.
 
 ## Layout and behavior
 - Base layout: `layouts/_default/baseof.html`
@@ -32,7 +32,7 @@
 - Post front matter uses ordered `images` array with `src`, `alt`, and optional `caption`.
 - Post front matter supports optional per-image `note` copy rendered under each image.
 - Preferred storage is page bundles (`content/posts/<slug>/` with images next to markdown).
-- `images[0]` is lead image for Home; `images[1]` is archive thumbnail.
+- `images[0]` is the lead image and default thumbnail source for Home and Archive.
 - Ingest rule: copy lines submitted between image embeds are assumed to belong to the image above unless clarified.
 
 ## Cloudflare Pages

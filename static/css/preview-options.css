@@ -1,0 +1,165 @@
+.preview-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.preview-head h1 {
+  margin-bottom: 0.35rem;
+}
+
+.preview-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+.preview-nav a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  background: color-mix(in hsl, var(--paper), white 25%);
+}
+
+.preview-image img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #dfd7ca;
+}
+
+.option-a {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-block {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.detail-rail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.detail-card {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.option-b {
+  display: grid;
+  gap: 1rem;
+}
+
+.pair-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.note { color: var(--muted); }
+
+.option-c {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.option-d {
+  display: grid;
+  gap: 1rem;
+}
+
+.d-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(240px, 1fr);
+  gap: 1rem;
+  align-items: end;
+}
+
+.d-module {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(240px, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.d-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.d-info,
+.d-note {
+  border: 1.4px solid color-mix(in hsl, var(--accent), black 15%);
+  border-radius: 8px;
+  background: color-mix(in hsl, var(--paper), white 16%);
+  padding: 0.85rem 0.9rem;
+}
+
+.d-info h3,
+.d-note h3 {
+  margin: 0 0 0.45rem;
+}
+
+.d-info p,
+.d-note p {
+  margin: 0 0 0.48rem;
+  line-height: 1.4;
+}
+
+.d-info p:last-child,
+.d-note p:last-child {
+  margin-bottom: 0;
+}
+
+.sheet-meta {
+  position: sticky;
+  top: 1rem;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: color-mix(in hsl, var(--paper), white 18%);
+}
+
+.sheet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .detail-rail,
+  .pair-row,
+  .sheet-grid,
+  .d-pair {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .option-c,
+  .d-intro,
+  .d-module {
+    grid-template-columns: 1fr;
+  }
+
+  .sheet-meta {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  .detail-rail,
+  .pair-row,
+  .sheet-grid,
+  .d-pair {
+    grid-template-columns: 1fr;
+  }
+}

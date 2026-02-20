@@ -3,61 +3,72 @@ title = "Chateau Marmont"
 date = 2026-02-18T12:00:00-08:00
 draft = false
 summary = "Still among the most interesting hotels, with some of the best stationery of all."
+location_display = "Los Angeles, California"
+year_opened = "1929"
+stationery_rank = "#"
+
+
+
+
+
 
 [[images]]
-src = "01-main.jpeg"
-alt = "Chateau Marmont stationery set overview"
-caption = "Lead sheet"
+src = "01-photo.jpg"
+alt = "Chateau Marmont stationery image 1"
+caption = "Image 1"
 
 [[images]]
-src = "02-letter.jpeg"
-alt = "Chateau Marmont letter detail"
-caption = "Primary letterhead"
-note = "Every CEO should do this: include a letter addressed personally and invite direct feedback."
+src = "02-photo.jpg"
+alt = "Chateau Marmont stationery image 2"
+caption = "Image 2"
 
 [[images]]
-src = "03-feedback.jpeg"
-alt = "Letter inviting direct feedback"
-caption = "Direct feedback invitation"
+src = "03-photo.jpg"
+alt = "Chateau Marmont stationery image 3"
+caption = "Image 3"
 
 [[images]]
-src = "04-cardstock.jpeg"
-alt = "Card stock close-up"
-caption = "Card stock face"
-note = "These note cards are laid paper on thick card stock."
+src = "04-photo.jpg"
+alt = "Chateau Marmont stationery image 4"
+caption = "Image 4"
 
 [[images]]
-src = "05-laid-paper.jpg"
-alt = "Laid paper texture"
-caption = "Laid paper texture"
+src = "05-photo.jpg"
+alt = "Chateau Marmont stationery image 5"
+caption = "Image 5"
 
 [[images]]
-src = "06-watermark.jpeg"
-alt = "Watermark detail"
-caption = "Watermark detail"
-note = "Bonus points for a visible watermark."
+src = "06-photo.jpg"
+alt = "Chateau Marmont stationery image 6"
+caption = "Image 6"
 
 [[images]]
-src = "07-tic.jpeg"
-alt = "Additional stationery piece"
-caption = "Supplementary piece"
+src = "07-photo.jpg"
+alt = "Chateau Marmont stationery image 7"
+caption = "Image 7"
 
 [[images]]
-src = "08-facsimile.jpeg"
-alt = "Facsimile cover sheet"
-caption = "Facsimile cover sheet"
+src = "08-photo.jpg"
+alt = "Chateau Marmont stationery image 8"
+caption = "Image 8"
 
 [[images]]
-src = "09-detail.jpeg"
-alt = "Stationery detail study"
-caption = "Material detail"
+src = "09-photo.jpg"
+alt = "Chateau Marmont stationery image 9"
+caption = "Image 9"
 
 [[images]]
-src = "10-envelope.jpeg"
-alt = "Envelope detail"
-caption = "Envelope detail"
+src = "10-photo.jpg"
+alt = "Chateau Marmont stationery image 10"
+caption = "Image 10"
+
+[[images]]
+src = "11-photo.jpg"
+alt = "Chateau Marmont stationery image 11"
+caption = "Image 11"
 +++
+**Location:** Los Angeles, California
+
+**Year opened:** 1929
 
 Still among the most interesting hotels, and with some of the best stationery of all.
-
-This was the first piece I ever collected back in 1997 when Disney flew me to LA to pitch me on making a movie about The Geek Squad.

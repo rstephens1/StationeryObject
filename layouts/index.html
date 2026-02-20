@@ -1,16 +1,17 @@
 {{ define "main" }}
 {{ $posts := where .Site.RegularPages "Section" "posts" }}
-{{ $ordered := $posts.ByDate.Reverse }}
-{{ if gt (len $ordered) 0 }}
-  {{ $featured := index $ordered 0 }}
-  {{ $rest := after 1 $ordered }}
+{{ $paginator := .Paginate ($posts.ByDate.Reverse) 5 }}
+{{ $pagePosts := $paginator.Pages }}
+{{ if gt (len $pagePosts) 0 }}
+  {{ $featured := index $pagePosts 0 }}
+  {{ $rest := after 1 $pagePosts }}
   <section class="home-grid" aria-label="Post feed">
     <div class="feed-column side left">
       {{ range $i, $post := $rest }}
         {{ if eq (mod $i 2) 0 }}
           <article class="feed-card side-card">
             <a class="media-link" href="{{ $post.RelPermalink }}" aria-label="Read {{ $post.Title }}">
-              {{ partial "post-image.html" (dict "page" $post "index" 0 "class" "card-image" "sizes" "(min-width: 1200px) 22vw, 94vw") }}
+              {{ partial "post-image.html" (dict "page" $post "index" 0 "class" "card-image" "loading" "lazy" "fetchpriority" "auto" "sizes" "(min-width: 1200px) 22vw, 94vw") }}
             </a>
             <h2><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h2>
             {{ with $post.Params.summary }}<p>{{ . }}</p>{{ end }}
@@ -22,7 +23,7 @@
 
     <article class="feed-card hero-card">
       <a class="media-link" href="{{ $featured.RelPermalink }}" aria-label="Read {{ $featured.Title }}">
-        {{ partial "post-image.html" (dict "page" $featured "index" 0 "class" "hero-image" "sizes" "(min-width: 1200px) 52vw, 94vw") }}
+        {{ partial "post-image.html" (dict "page" $featured "index" 0 "class" "hero-image" "loading" "eager" "fetchpriority" "high" "sizes" "(min-width: 1200px) 52vw, 94vw") }}
       </a>
       <h1><a href="{{ $featured.RelPermalink }}">{{ $featured.Title }}</a></h1>
       {{ with $featured.Params.summary }}<p class="hero-summary">{{ . }}</p>{{ end }}
@@ -34,7 +35,7 @@
         {{ if eq (mod $i 2) 1 }}
           <article class="feed-card side-card">
             <a class="media-link" href="{{ $post.RelPermalink }}" aria-label="Read {{ $post.Title }}">
-              {{ partial "post-image.html" (dict "page" $post "index" 0 "class" "card-image" "sizes" "(min-width: 1200px) 22vw, 94vw") }}
+              {{ partial "post-image.html" (dict "page" $post "index" 0 "class" "card-image" "loading" "lazy" "fetchpriority" "auto" "sizes" "(min-width: 1200px) 22vw, 94vw") }}
             </a>
             <h2><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h2>
             {{ with $post.Params.summary }}<p>{{ . }}</p>{{ end }}
@@ -44,6 +45,15 @@
       {{ end }}
     </div>
   </section>
+
+  <nav class="home-pager" aria-label="Home pagination">
+    {{ if $paginator.HasPrev }}
+      <a class="pager-link" href="{{ $paginator.Prev.URL }}">Newer posts</a>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+      <a class="pager-link" href="{{ $paginator.Next.URL }}">Load more posts</a>
+    {{ end }}
+  </nav>
 {{ else }}
   <section><p>No posts yet.</p></section>
 {{ end }}

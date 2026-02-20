@@ -13,7 +13,7 @@
             <p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time></p>
           </div>
           <a class="archive-media" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">
-            {{ partial "post-image.html" (dict "page" . "index" 1 "class" "archive-image" "sizes" "(min-width: 980px) 24vw, 94vw") }}
+            {{ partial "post-image.html" (dict "page" . "index" 0 "class" "archive-image" "loading" "lazy" "fetchpriority" "auto" "sizes" "(min-width: 980px) 24vw, 94vw") }}
           </a>
         </article>
       {{ end }}

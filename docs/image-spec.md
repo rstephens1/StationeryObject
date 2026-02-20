@@ -28,7 +28,7 @@ static/img/<slug>/01-main.jpg
 Use an `images` array in post front matter. Order matters.
 
 - `images[0]`: lead image for Home
-- `images[1]`: archive thumbnail (the Archive layout uses the second image first)
+- `images[0]`: archive thumbnail (Archive also uses the first image)
 
 Example (TOML):
 
@@ -77,7 +77,7 @@ Suggested format:
 - Home: reverse-chronological feed, newest post featured in center.
 - Side columns: remaining posts alternate left/right.
 - Archive: reverse-chronological rows with image on right.
-- Archive image source: `images[1]` (falls back to `images[0]`).
+- Archive image source: `images[0]`.
 
 ## Authoring Checklist Per Post
 

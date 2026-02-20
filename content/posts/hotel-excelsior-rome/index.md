@@ -1,0 +1,27 @@
++++
+title = "HOTEL EXCELSIOR ROMe"
+date = 2026-02-18T19:52:04-08:00
+draft = false
+summary = "Stationery collection from HOTEL EXCELSIOR ROMe."
+
+
+[[images]]
+src = "01-photo.jpg"
+alt = "HOTEL EXCELSIOR ROMe stationery image 1"
+caption = "Image 1"
+
+[[images]]
+src = "02-photo.jpg"
+alt = "HOTEL EXCELSIOR ROMe stationery image 2"
+caption = "Image 2"
+
+[[images]]
+src = "03-photo.jpg"
+alt = "HOTEL EXCELSIOR ROMe stationery image 3"
+caption = "Image 3"
++++
+**Location:** Rome, Italy
+
+**Year opened:** 1906
+
+HOTEL EXCELSIOR ROMe is known for its Via Veneto location and star-studded postwar Roman glamour era.

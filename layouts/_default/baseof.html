@@ -7,6 +7,9 @@
   <meta name="description" content="{{ with .Params.summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "/index.xml" | relURL }}">
   <link rel="stylesheet" href="{{ "/css/base.css" | relURL }}">
+  {{ if eq .Section "previews" }}
+    <link rel="stylesheet" href="{{ "/css/preview-options.css" | relURL }}">
+  {{ end }}
 </head>
 <body>
   <header class="site-header">

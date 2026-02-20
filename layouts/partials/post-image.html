@@ -2,6 +2,7 @@
 {{- $idx := .index | default 0 -}}
 {{- $class := .class | default "" -}}
 {{- $loading := .loading | default "lazy" -}}
+{{- $fetchpriority := .fetchpriority | default "auto" -}}
 {{- $sizes := .sizes | default "100vw" -}}
 {{- $fallback := .fallback | default true -}}
 {{- $showCaption := .show_caption | default false -}}
@@ -40,7 +41,7 @@
       {{- end -}}
     {{- end -}}
     <figure class="post-image {{ $class }}">
-      <img src="{{ $resolved }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async" sizes="{{ $sizes }}">
+      <img src="{{ $resolved }}" alt="{{ $alt }}" loading="{{ $loading }}" fetchpriority="{{ $fetchpriority }}" decoding="async" sizes="{{ $sizes }}">
       {{- if $showCaption -}}
         {{- if or $caption $note -}}
           <figcaption>

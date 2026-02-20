@@ -8,20 +8,23 @@
   {{ $images := .Params.images }}
   {{ if and (reflect.IsSlice $images) (gt (len $images) 0) }}
     <section class="post-gallery" aria-label="Post images">
-      {{ $count := len $images }}
-      {{ range $i, $_ := $images }}
-        {{ if eq (mod $i 2) 0 }}
-          {{ $pair := div $i 2 }}
-          {{ $variant := mod $pair 3 }}
-          <div class="post-pair-row {{ if eq $variant 0 }}is-emphasis-left{{ else if eq $variant 1 }}is-emphasis-right{{ else }}is-balanced{{ end }}">
-            {{ partial "post-image.html" (dict "page" $ "index" $i "class" "post-detail-image" "loading" "eager" "sizes" "(min-width: 980px) 46vw, 96vw" "fallback" false "show_caption" true) }}
-            {{ $j := add $i 1 }}
-            {{ if lt $j $count }}
-              {{ partial "post-image.html" (dict "page" $ "index" $j "class" "post-detail-image" "loading" "eager" "sizes" "(min-width: 980px) 46vw, 96vw" "fallback" false "show_caption" true) }}
+      <section class="post-option-a">
+        <div class="post-hero-block">
+          {{ partial "post-image.html" (dict "page" $ "index" 0 "class" "post-detail-image post-hero-image" "loading" "eager" "sizes" "(min-width: 980px) 80vw, 96vw" "fallback" false "show_caption" true) }}
+        </div>
+
+        {{ $tail := after 1 $images }}
+        {{ if gt (len $tail) 0 }}
+          <div class="post-detail-rail">
+            {{ range $k, $_ := $tail }}
+              {{ $i := add $k 1 }}
+              <article class="post-detail-card">
+                {{ partial "post-image.html" (dict "page" $ "index" $i "class" "post-detail-image" "loading" "eager" "sizes" "(min-width: 980px) 40vw, 96vw" "fallback" false "show_caption" true) }}
+              </article>
             {{ end }}
           </div>
         {{ end }}
-      {{ end }}
+      </section>
     </section>
   {{ end }}
 

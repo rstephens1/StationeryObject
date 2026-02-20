@@ -1,0 +1,141 @@
+{{ define "main" }}
+{{ $p := site.GetPage "posts/chateau-marmont" }}
+{{ $images := slice }}
+{{ if $p }}
+  {{ $images = $p.Params.images }}
+{{ end }}
+<section class="preview-shell">
+  <header class="preview-head">
+    <h1>{{ .Title }}</h1>
+    <p class="meta">Design preview using real images from Chateau Marmont test post.</p>
+    <nav class="preview-nav" aria-label="Preview options">
+      <a href="/previews/option-a/">Option A</a>
+      <a href="/previews/option-b/">Option B</a>
+      <a href="/previews/option-c/">Option C</a>
+      <a href="/previews/option-d/">Option D</a>
+      <a href="/posts/chateau-marmont/">Current Live Post</a>
+    </nav>
+  </header>
+
+  {{ $variant := .Params.variant }}
+
+  {{ if eq $variant "story-rail" }}
+    <div class="option-a">
+      <article class="hero-block">
+        <h2>Lead + Story Sequence</h2>
+        {{ partial "post-image.html" (dict "page" $p "index" 0 "class" "preview-image hero" "fallback" false "sizes" "(min-width: 1200px) 76vw, 96vw") }}
+        <p>Best when each post has one anchor image and 4-8 supporting detail shots.</p>
+      </article>
+      <div class="detail-rail">
+        {{ range $i, $_ := $images }}
+          {{ if gt $i 0 }}
+            <article class="detail-card">
+              <h3>Detail {{ add $i 1 }}</h3>
+              {{ partial "post-image.html" (dict "page" $p "index" $i "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 38vw, 96vw") }}
+            </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  {{ else if eq $variant "compare-pairs" }}
+    <div class="option-b">
+      <article class="pair-row">
+        <div>
+          <h2>Context</h2>
+          {{ partial "post-image.html" (dict "page" $p "index" 0 "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 46vw, 96vw") }}
+        </div>
+        <div>
+          <h2>Identity Mark</h2>
+          {{ partial "post-image.html" (dict "page" $p "index" 1 "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 46vw, 96vw") }}
+        </div>
+      </article>
+      <article class="pair-row">
+        <div>
+          <h2>Paper Grain</h2>
+          {{ partial "post-image.html" (dict "page" $p "index" 4 "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 46vw, 96vw") }}
+        </div>
+        <div>
+          <h2>Watermark</h2>
+          {{ partial "post-image.html" (dict "page" $p "index" 5 "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 46vw, 96vw") }}
+        </div>
+      </article>
+      <p class="note">Strong editorial comparison pattern. Works especially well for desktop and tablet landscape.</p>
+    </div>
+  {{ else if eq $variant "annotated-rhythm" }}
+    {{ $img1 := index $images 1 }}
+    {{ $img2 := index $images 2 }}
+    {{ $img4 := index $images 4 }}
+    {{ $img6 := index $images 6 }}
+    <div class="option-d">
+      <section class="d-intro">
+        <div class="d-hero">
+          <h2>Hero + Fact Panel</h2>
+          {{ partial "post-image.html" (dict "page" $p "index" 0 "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 62vw, 96vw") }}
+        </div>
+        <aside class="d-info">
+          <h3>Quick Facts</h3>
+          <p><strong>Location:</strong> {{ default "City, State/Country" $p.Params.location_display }}</p>
+          <p><strong>Year opened:</strong> {{ default "Year" $p.Params.year_opened }}</p>
+          <p><strong>Stationery Rank (1-10):</strong> {{ default "#" $p.Params.stationery_rank }}</p>
+        </aside>
+      </section>
+
+      <section class="d-module">
+        <div class="d-pair">
+          <article>
+            {{ partial "post-image.html" (dict "page" $p "index" 1 "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 31vw, 96vw") }}
+          </article>
+          <article>
+            {{ partial "post-image.html" (dict "page" $p "index" 2 "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 31vw, 96vw") }}
+          </article>
+        </div>
+        <aside class="d-note">
+          <h3>Material Notes</h3>
+          <p>{{ if and $img1 (isset $img1 "note") }}{{ index $img1 "note" }}{{ else }}Place a short note about what the mark and print quality reveal.{{ end }}</p>
+          <p>{{ if and $img2 (isset $img2 "note") }}{{ index $img2 "note" }}{{ else }}Keep notes between 40 and 90 words so the layout breathes.{{ end }}</p>
+        </aside>
+      </section>
+
+      <section class="d-module d-module-feature">
+        <div class="d-feature-image">
+          {{ partial "post-image.html" (dict "page" $p "index" 4 "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 54vw, 96vw") }}
+        </div>
+        <aside class="d-note">
+          <h3>Texture Callout</h3>
+          <p>{{ if and $img4 (isset $img4 "note") }}{{ index $img4 "note" }}{{ else }}Use one short paragraph to explain stock, grain, or printing depth.{{ end }}</p>
+        </aside>
+      </section>
+
+      <section class="d-module d-module-last">
+        <div class="d-feature-image">
+          {{ partial "post-image.html" (dict "page" $p "index" 6 "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 54vw, 96vw") }}
+        </div>
+        <aside class="d-note">
+          <h3>Context Note</h3>
+          <p>{{ if and $img6 (isset $img6 "note") }}{{ index $img6 "note" }}{{ else }}Reserve this panel for provenance or historical context tied to this sheet.{{ end }}</p>
+        </aside>
+      </section>
+    </div>
+  {{ else }}
+    <div class="option-c">
+      <aside class="sheet-meta">
+        <h2>Contact Sheet + Sticky Notes</h2>
+        <p>Great for frequent posts with consistent image sets. Readers scan quickly then open the full post.</p>
+        <ul>
+          <li>Full view first</li>
+          <li>Then logo/header detail</li>
+          <li>Then material evidence</li>
+          <li>Then supporting ephemera</li>
+        </ul>
+      </aside>
+      <div class="sheet-grid">
+        {{ range $i, $_ := $images }}
+          <article class="thumb">
+            {{ partial "post-image.html" (dict "page" $p "index" $i "class" "preview-image" "fallback" false "sizes" "(min-width: 1200px) 30vw, 48vw") }}
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</section>
+{{ end }}
