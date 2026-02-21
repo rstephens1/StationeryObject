@@ -8,12 +8,12 @@ summary = "Stationery collection from HOTEL INTERCONTINENTAL LUXEMBOURG."
 [[images]]
 src = "01-photo.jpg"
 alt = "HOTEL INTERCONTINENTAL LUXEMBOURG stationery image 1"
-caption = "1. Image 1"
+caption = "1"
 
 [[images]]
 src = "02-photo.jpg"
 alt = "HOTEL INTERCONTINENTAL LUXEMBOURG stationery image 2"
-caption = "2. Image 2"
+caption = "2"
 +++
 **Location:** Luxembourg City, Luxembourg
 

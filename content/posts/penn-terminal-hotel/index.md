@@ -7,7 +7,7 @@ summary = "Stationery collection from Penn Terminal Hotel."
 [[images]]
 src = "01-photo.jpg"
 alt = "Penn Terminal Hotel stationery image 1"
-caption = "1. Image 1"
+caption = "1"
 +++
 **Location:** New York, New York, USA
 

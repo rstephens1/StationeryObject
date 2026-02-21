@@ -7,7 +7,7 @@ summary = "Stationery collection from Hotel Monteleone New Orleans."
 [[images]]
 src = "01-photo.jpg"
 alt = "Hotel Monteleone New Orleans stationery image 1"
-caption = "1. Image 1"
+caption = "1"
 +++
 **Location:** New Orleans, Louisiana, USA
 

@@ -9,27 +9,27 @@ summary = "Stationery collection from Intercontinental Hong Kong."
 [[images]]
 src = "01-photo.jpg"
 alt = "Intercontinental Hong Kong stationery image 1"
-caption = "1. Image 1"
+caption = "1"
 
 [[images]]
 src = "02-photo.jpg"
 alt = "Intercontinental Hong Kong stationery image 2"
-caption = "2. Image 2"
+caption = "2"
 
 [[images]]
 src = "03-photo.jpg"
 alt = "Intercontinental Hong Kong stationery image 3"
-caption = "3. Image 3"
+caption = "3"
 
 [[images]]
 src = "04-photo.jpg"
 alt = "Intercontinental Hong Kong stationery image 4"
-caption = "4. Image 4"
+caption = "4"
 
 [[images]]
 src = "05-photo.jpg"
 alt = "Intercontinental Hong Kong stationery image 5"
-caption = "5. Image 5"
+caption = "5"
 +++
 **Location:** Hong Kong
 

@@ -8,17 +8,17 @@ summary = "Stationery collection from San Francisco Overland 🚄."
 [[images]]
 src = "01-photo.jpg"
 alt = "San Francisco Overland 🚄 stationery image 1"
-caption = "1. Image 1"
+caption = "1"
 
 [[images]]
 src = "02-photo.jpg"
 alt = "San Francisco Overland 🚄 stationery image 2"
-caption = "2. Image 2"
+caption = "2"
 
 [[images]]
 src = "03-photo.jpg"
 alt = "San Francisco Overland 🚄 stationery image 3"
-caption = "3. Image 3"
+caption = "3"
 +++
 **Location:** Chicago, Illinois and San Francisco, California, USA
 

@@ -8,17 +8,17 @@ summary = "Stationery collection from Disneyland Resort Anaheim."
 [[images]]
 src = "01-photo.jpg"
 alt = "Disneyland Resort Anaheim stationery image 1"
-caption = "1. Image 1"
+caption = "1"
 
 [[images]]
 src = "02-photo.jpg"
 alt = "Disneyland Resort Anaheim stationery image 2"
-caption = "2. Image 2"
+caption = "2"
 
 [[images]]
 src = "03-photo.jpg"
 alt = "Disneyland Resort Anaheim stationery image 3"
-caption = "3. Image 3"
+caption = "3"
 +++
 **Location:** Anaheim, California, USA
 

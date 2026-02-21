@@ -8,12 +8,12 @@ summary = "Stationery collection from HAKUSUIKAN Ibusuki KAGOSHIMA."
 [[images]]
 src = "01-photo.jpg"
 alt = "HAKUSUIKAN Ibusuki KAGOSHIMA stationery image 1"
-caption = "1. Image 1"
+caption = "1"
 
 [[images]]
 src = "02-photo.jpg"
 alt = "HAKUSUIKAN Ibusuki KAGOSHIMA stationery image 2"
-caption = "2. Image 2"
+caption = "2"
 +++
 **Location:** Ibusuki, Japan
 
