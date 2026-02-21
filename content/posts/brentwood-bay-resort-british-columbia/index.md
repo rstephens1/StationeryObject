@@ -8,17 +8,17 @@ summary = "Stationery collection from Brentwood Bay Resort British Columbia."
 [[images]]
 src = "01-photo.jpg"
 alt = "Brentwood Bay Resort British Columbia stationery image 1"
-caption = "Image 1"
+caption = "1. Image 1"
 
 [[images]]
 src = "02-photo.jpg"
 alt = "Brentwood Bay Resort British Columbia stationery image 2"
-caption = "Image 2"
+caption = "2. Image 2"
 
 [[images]]
 src = "03-photo.jpg"
 alt = "Brentwood Bay Resort British Columbia stationery image 3"
-caption = "Image 3"
+caption = "3. Image 3"
 +++
 **Location:** Brentwood Bay, British Columbia, Canada
 

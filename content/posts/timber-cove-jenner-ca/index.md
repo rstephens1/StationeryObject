@@ -8,12 +8,12 @@ summary = "Stationery collection from Timber Cove Jenner CA."
 [[images]]
 src = "01-photo.jpg"
 alt = "Timber Cove Jenner CA stationery image 1"
-caption = "Image 1"
+caption = "1. Image 1"
 
 [[images]]
 src = "02-photo.jpg"
 alt = "Timber Cove Jenner CA stationery image 2"
-caption = "Image 2"
+caption = "2. Image 2"
 +++
 **Location:** Jenner, California, USA
 

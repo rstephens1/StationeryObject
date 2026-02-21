@@ -8,12 +8,12 @@ summary = "Stationery collection from Silverado Resort Napa."
 [[images]]
 src = "01-photo.jpg"
 alt = "Silverado Resort Napa stationery image 1"
-caption = "Image 1"
+caption = "1. Image 1"
 
 [[images]]
 src = "02-photo.jpg"
 alt = "Silverado Resort Napa stationery image 2"
-caption = "Image 2"
+caption = "2. Image 2"
 +++
 **Location:** Napa, California, USA
 

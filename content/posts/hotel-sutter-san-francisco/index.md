@@ -9,27 +9,27 @@ summary = "Stationery collection from Hotel Sutter San Francisco."
 [[images]]
 src = "01-photo.jpg"
 alt = "Hotel Sutter San Francisco stationery image 1"
-caption = "Image 1"
+caption = "1. Image 1"
 
 [[images]]
 src = "02-photo.jpg"
 alt = "Hotel Sutter San Francisco stationery image 2"
-caption = "Image 2"
+caption = "2. Image 2"
 
 [[images]]
 src = "03-photo.jpg"
 alt = "Hotel Sutter San Francisco stationery image 3"
-caption = "Image 3"
+caption = "3. Image 3"
 
 [[images]]
 src = "04-photo.jpg"
 alt = "Hotel Sutter San Francisco stationery image 4"
-caption = "Image 4"
+caption = "4. Image 4"
 
 [[images]]
 src = "05-photo.jpg"
 alt = "Hotel Sutter San Francisco stationery image 5"
-caption = "Image 5"
+caption = "5. Image 5"
 +++
 **Location:** San Francisco, California, USA
 

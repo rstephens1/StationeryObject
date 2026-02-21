@@ -7,7 +7,7 @@ summary = "Stationery collection from University Manor Motel."
 [[images]]
 src = "01-photo.jpg"
 alt = "University Manor Motel stationery image 1"
-caption = "Image 1"
+caption = "1. Image 1"
 +++
 **Location:** Buffalo, New York, USA
 
