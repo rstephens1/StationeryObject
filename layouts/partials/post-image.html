@@ -46,7 +46,7 @@
         {{- if or $caption $note -}}
           <figcaption>
             {{- if $caption -}}<span class="image-caption">{{ $caption }}</span>{{- end -}}
-            {{- if $note -}}<span class="image-note">{{ $note }}</span>{{- end -}}
+            {{- if $note -}}<div class="image-note">{{ $note | markdownify }}</div>{{- end -}}
           </figcaption>
         {{- end -}}
       {{- end -}}
