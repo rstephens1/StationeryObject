@@ -6,14 +6,15 @@
     {{ range $group := $posts.GroupByDate "January 2006" }}
       <h2 class="archive-month">{{ upper $group.Key }}</h2>
       {{ range $group.Pages.ByDate.Reverse }}
+        {{ $post := . }}
         <article class="archive-row">
           <div class="archive-copy">
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-            <p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time></p>
+            <h3><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h3>
+            {{ with $post.Params.summary }}<p>{{ $post.RenderString (dict "display" "inline") . }}</p>{{ end }}
+            <p class="meta"><time datetime="{{ $post.Date.Format "2006-01-02" }}">{{ $post.Date.Format "Jan 2" }}</time></p>
           </div>
-          <a class="archive-media" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">
-            {{ partial "post-image.html" (dict "page" . "index" 0 "class" "archive-image" "loading" "lazy" "fetchpriority" "auto" "sizes" "(min-width: 980px) 24vw, 94vw") }}
+          <a class="archive-media" href="{{ $post.RelPermalink }}" aria-label="Read {{ $post.Title }}">
+            {{ partial "post-image.html" (dict "page" $post "index" 0 "class" "archive-image" "loading" "lazy" "fetchpriority" "auto" "sizes" "(min-width: 980px) 24vw, 94vw") }}
           </a>
         </article>
       {{ end }}

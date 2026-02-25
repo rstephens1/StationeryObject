@@ -12,6 +12,7 @@ src = "01-photo.jpg"
 alt = "Proper Hotel San Francisco stationery image 1"
 caption = "1"
 
+
 [[images]]
 src = "02-photo.jpg"
 alt = "Proper Hotel San Francisco stationery image 2"

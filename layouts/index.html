@@ -14,7 +14,7 @@
               {{ partial "post-image.html" (dict "page" $post "index" 0 "class" "card-image" "loading" "lazy" "fetchpriority" "auto" "sizes" "(min-width: 1200px) 22vw, 94vw") }}
             </a>
             <h2><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h2>
-            {{ with $post.Params.summary }}<p>{{ . }}</p>{{ end }}
+            {{ with $post.Params.summary }}<p>{{ $post.RenderString (dict "display" "inline") . }}</p>{{ end }}
             <p class="meta"><time datetime="{{ $post.Date.Format "2006-01-02" }}">{{ $post.Date.Format "Jan 2" }}</time></p>
           </article>
         {{ end }}
@@ -26,7 +26,7 @@
         {{ partial "post-image.html" (dict "page" $featured "index" 0 "class" "hero-image" "loading" "eager" "fetchpriority" "high" "sizes" "(min-width: 1200px) 52vw, 94vw") }}
       </a>
       <h1><a href="{{ $featured.RelPermalink }}">{{ $featured.Title }}</a></h1>
-      {{ with $featured.Params.summary }}<p class="hero-summary">{{ . }}</p>{{ end }}
+      {{ with $featured.Params.summary }}<p class="hero-summary">{{ $featured.RenderString (dict "display" "inline") . }}</p>{{ end }}
       <p class="meta"><time datetime="{{ $featured.Date.Format "2006-01-02" }}">{{ $featured.Date.Format "January 2, 2006" }}</time></p>
     </article>
 
@@ -38,7 +38,7 @@
               {{ partial "post-image.html" (dict "page" $post "index" 0 "class" "card-image" "loading" "lazy" "fetchpriority" "auto" "sizes" "(min-width: 1200px) 22vw, 94vw") }}
             </a>
             <h2><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h2>
-            {{ with $post.Params.summary }}<p>{{ . }}</p>{{ end }}
+            {{ with $post.Params.summary }}<p>{{ $post.RenderString (dict "display" "inline") . }}</p>{{ end }}
             <p class="meta"><time datetime="{{ $post.Date.Format "2006-01-02" }}">{{ $post.Date.Format "Jan 2" }}</time></p>
           </article>
         {{ end }}

@@ -1,14 +1,15 @@
 +++
-title = "HOTEL EXCELSIOR ROMe"
+title = "HOTEL EXCELSIOR ROME"
 date = 2021-07-24
 draft = false
-summary = "Stationery collection from HOTEL EXCELSIOR ROMe."
+summary = "Stationery collection from HOTEL EXCELSIOR ROME."
 
 
 [[images]]
 src = "01-photo.jpg"
 alt = "HOTEL EXCELSIOR ROMe stationery image 1"
 caption = "1"
+note = "Stationery [circa](https://share.google/aimode/NQ6ixGhLGNtTN2VR2) 1950-60's. Lovely textured paper, clean whitespace on page."
 
 [[images]]
 src = "02-photo.jpg"
@@ -24,4 +25,4 @@ caption = "3"
 
 **Year opened:** 1906
 
-HOTEL EXCELSIOR ROMe is known for its Via Veneto location and star-studded postwar Roman glamour era.
+Known for its Via Veneto location and star-studded postwar Roman glamour era.
