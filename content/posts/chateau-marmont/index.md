@@ -2,8 +2,8 @@
 title = "Chateau Marmont"
 date = 2023-12-17
 draft = false
-summary = "Still among the most interesting hotels, with some of the best stationery of all."
-location_display = "Los Angeles, California"
+summary = "A 1997 first-class trip to Chateau Marmont became the starting point for a lifelong hotel stationery archive."
+location_display = "West Hollywood, California, USA"
 year_opened = "1929"
 stationery_rank = "#"
 
@@ -16,70 +16,70 @@ stationery_rank = "#"
 src = "01-photo.jpg"
 alt = "Chateau Marmont stationery image 1"
 caption = "1"
-note = "It was 1997, and I had never flown first class or even been to Los Angeles. Disney flew me out to pitch a Geek Squad movie after I fixed a producer's computer during The Mighty Ducks shoot in Minnesota. The movie never happened, but I still got the trip, the tour of Burbank, and a room at Chateau Marmont."
+note = "It is 1997. I have never flown first class. I have never been to Los Angeles. Disney flies me down because they want to pitch turning Geek Squad into a movie, a Revenge of the Nerds meets Ghostbusters concept that never happens because no one can quite explain why it should. They put me at the Chateau Marmont on Sunset Boulevard in its faux French castle perch. It opened in 1929 as luxury apartments, built to survive earthquakes, then evolved into a hotel synonymous with privacy and bad decisions made quietly. This is also where John Belushi died in 1982, which gives the place an extra layer of Hollywood gravity, and it has been mythologized on film, including Sofia Coppola's Somewhere."
 
 [[images]]
 src = "02-photo.jpg"
 alt = "Chateau Marmont stationery image 2"
 caption = "2"
-note = "My habit of keeping hotel stationery started earlier, when Charlie Watts showed me the notebook where he had sketched every hotel bed he had slept in since 1968. At Chateau, the first thing I noticed was a leather binder with this sheet inside. I kept these original pages from that trip, and they became the standard that inspired this entire project."
+note = "The first thing I notice is not the bed, the minibar, or the view. It is a leather binder on the table, like a small altar. Inside is exquisite stationery. The type matches the building, simple and elegant, like it was designed to age well. The rendering of the Chateau feels engraved, or meant to look engraved. It signals permanence and says: write something that matters."
 
 [[images]]
 src = "03-photo.jpg"
 alt = "Chateau Marmont stationery image 3"
 caption = "3"
-note = "This angle shows why the layout works so well: plenty of open space for letters, lyrics, contracts, or late-night notes. The mark is elegant without shouting. It feels tied to the architecture itself."
+note = "This one still blows my mind: a letter from Andre Balazs asking for comments on your stay, with an envelope addressed back to him. It is not a generic tell-us-how-we-did card. It is the owner putting his name on it. Balazs bought and restored the Chateau in 1990, and the whole gesture feels like that era's version of founder mode. Also, the postage: a 34 cent first-class stamp, and someone hand-noted the extra 1 cent so the envelope could be reused without wasting it. Tiny discipline, hiding in plain sight."
 
 [[images]]
 src = "04-photo.jpg"
 alt = "Chateau Marmont stationery image 4"
 caption = "4"
-note = "Held up to the light, the Strathmore Pure Cotton watermark appears. You can learn a lot from details like this: paper choice, texture, and print finish are part of the story. This is what keeps hotel stationery from feeling disposable."
+note = "A clean sheet of letterhead. Big margins. Room at the top for lyrics, contracts, and confessions. The contact line matters: Sunset Boulevard, Hollywood, California, and Facsimile. That single word is a date stamp. This sits in the 1980s to 1990s, when fax numbers were still a promise, not a museum exhibit."
 
 [[images]]
 src = "05-photo.jpg"
 alt = "Chateau Marmont stationery image 5"
 caption = "5"
-note = "This is the companion card: understated, formal, and beautifully printed on darker laid stock. Cards like this are usually for staff messages, but Chateau put them in the guest set, which says a lot about their standards. Even the secondary type choice is excellent."
+note = "The note card: Chateau Marmont and nothing else. Elegant and restrained. They give it to the guest, not just the staff. The card stock is a medium-dark gray laid sheet with that subtle currency texture from the wire. It feels expensive in a way that has nothing to do with thickness and everything to do with intention."
 
 [[images]]
 src = "06-photo.jpg"
 alt = "Chateau Marmont stationery image 6"
 caption = "6"
-note = "Here is the pair together: card and matching envelope, both treated as essential, not optional. It feels like a complete writing kit, not a leftover amenity. These little decisions are what make a hotel feel intentional."
+note = "The watermark shot, held up to a lamp. Classic Strathmore. A watermark is the stationery equivalent of a velvet rope. Not loud, not flashy, just quietly stating that the paper has lineage."
 
 [[images]]
 src = "07-photo.jpg"
 alt = "Chateau Marmont stationery image 7"
 caption = "7"
-note = "A warmer angle, but the same core qualities: balanced letterhead, generous white space, and visible watermark. The paper carries the brand as much as the logo does. This is heirloom behavior in a disposable era."
+note = "A closer look again at the Balazs letter, then the fax cover sheet. Facsimile cover sheet is printed right on it like a ceremonial title. Hotels do not do this anymore because nobody needs it, and because nobody wants to pay for objects that teach you how to be attentive."
 
 [[images]]
 src = "08-photo.jpg"
 alt = "Chateau Marmont stationery image 8"
 caption = "8"
-note = "The envelope is crisp and restrained, with the address and mark doing just enough. You can imagine this leaving the desk with a handwritten note inside. It is a small object, but it carries the identity of the place."
+note = "The note card with the envelope is a complete kit. This is the hotel saying: take a piece of us with you, and maybe send something into the world that does not disappear instantly."
 
 [[images]]
 src = "09-photo.jpg"
 alt = "Chateau Marmont stationery image 9"
 caption = "9"
-note = "The facsimile cover sheet dates the set immediately and beautifully. You can see the transition era right in the typography and labels: old-world hotel, modern office utility. Most hotels dropped this long ago, which makes this artifact even better."
+note = "At some point, Charlie Watts told me he had drawn every hotel bed he had slept in since 1968. That was the first time I understood hotels as archives, not just rooms. This stationery is my version of that notebook: a portable souvenir that still expects you to do something with it."
 
 [[images]]
 src = "10-photo.jpg"
 alt = "Chateau Marmont stationery image 10"
 caption = "10"
-note = "This is the piece that still surprises me: a direct guest-feedback letter signed by Andre Balazs. It invites comments and makes customer listening feel personal, not procedural. Every CEO should study this move, on paper or otherwise."
+note = "This is the piece that still surprises me: a direct guest-feedback letter signed by Andre Balazs. It invites comments and makes customer listening feel personal, not procedural."
 
 [[images]]
 src = "11-photo.jpg"
 alt = "Chateau Marmont stationery image 11"
 caption = "11"
-note = "The final image shows the feedback letter with its addressed return envelope to New York, complete with 34-cent stamps and a one-cent add-on. That tiny postal detail captures the era perfectly. For me, this set remains the benchmark: hospitality, design, and memory in one place."
+note = "The final image shows the feedback letter with its addressed return envelope to New York, complete with 34-cent stamps and a one-cent add-on. That tiny postal detail captures the era perfectly."
 +++
-**Location:** Los Angeles, California
+**Location:** West Hollywood, California, USA
 
 **Year opened:** 1929
 
-Still among the most interesting hotels, and with some of the best stationery of all.
+Chateau Marmont remains one of the most interesting hotels in this archive, and one of the strongest examples of period hotel stationery done with intent.

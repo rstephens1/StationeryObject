@@ -47,3 +47,4 @@
 ## Update policy
 - Keep this file updated as stack, deploy settings, and structure change.
 - Update when layouts/content sections are added, removed, or renamed.
+- Local preview hygiene: before saying preview is ready, verify the expected port is listening (e.g., `lsof -nP -iTCP:1313 -sTCP:LISTEN`), and if not, clear/restart the server process and re-check with `curl -I http://127.0.0.1:1313/`.
