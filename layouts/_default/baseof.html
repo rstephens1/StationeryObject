@@ -5,27 +5,36 @@
   {{ $metaDescription := .Params.summary | default .Site.Params.description }}
   {{ $metaURL := .Permalink }}
   {{ $metaType := cond .IsHome "website" "article" }}
-  {{ $metaImage := "" }}
-  {{ $metaImageAlt := .Title }}
+  {{ $scratch := newScratch }}
+  {{ $scratch.Set "metaImage" "" }}
+  {{ $scratch.Set "metaImageAlt" .Title }}
   {{ with .Params.images }}
     {{ if gt (len .) 0 }}
       {{ $lead := index . 0 }}
       {{ with index $lead "src" }}
         {{ if hasPrefix . "http://" }}
-          {{ $metaImage = . }}
+          {{ $scratch.Set "metaImage" . }}
         {{ else if hasPrefix . "https://" }}
-          {{ $metaImage = . }}
+          {{ $scratch.Set "metaImage" . }}
         {{ else if hasPrefix . "/" }}
-          {{ $metaImage = . | absURL }}
+          {{ $scratch.Set "metaImage" (. | absURL) }}
         {{ else }}
-          {{ $metaImage = printf "%s%s" $.Permalink . }}
+          {{ with $.Resources.GetMatch . }}
+            {{ with .Fill "1200x630 Center" }}
+              {{ $scratch.Set "metaImage" .Permalink }}
+            {{ end }}
+          {{ else }}
+            {{ $scratch.Set "metaImage" (printf "%s%s" $.Permalink .) }}
+          {{ end }}
         {{ end }}
       {{ end }}
       {{ with index $lead "alt" }}
-        {{ $metaImageAlt = . }}
+        {{ $scratch.Set "metaImageAlt" . }}
       {{ end }}
     {{ end }}
   {{ end }}
+  {{ $metaImage := $scratch.Get "metaImage" }}
+  {{ $metaImageAlt := $scratch.Get "metaImageAlt" }}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ $metaTitle }}</title>
