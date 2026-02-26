@@ -1,10 +1,51 @@
 <!doctype html>
 <html lang="en">
 <head>
+  {{ $metaTitle := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Title) }}
+  {{ $metaDescription := .Params.summary | default .Site.Params.description }}
+  {{ $metaURL := .Permalink }}
+  {{ $metaType := cond .IsHome "website" "article" }}
+  {{ $metaImage := "" }}
+  {{ $metaImageAlt := .Title }}
+  {{ with .Params.images }}
+    {{ if gt (len .) 0 }}
+      {{ $lead := index . 0 }}
+      {{ with index $lead "src" }}
+        {{ if hasPrefix . "http://" }}
+          {{ $metaImage = . }}
+        {{ else if hasPrefix . "https://" }}
+          {{ $metaImage = . }}
+        {{ else if hasPrefix . "/" }}
+          {{ $metaImage = . | absURL }}
+        {{ else }}
+          {{ $metaImage = printf "%s%s" $.Permalink . }}
+        {{ end }}
+      {{ end }}
+      {{ with index $lead "alt" }}
+        {{ $metaImageAlt = . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ with .Params.summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <title>{{ $metaTitle }}</title>
+  <meta name="description" content="{{ $metaDescription }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:type" content="{{ $metaType }}">
+  <meta property="og:title" content="{{ $metaTitle }}">
+  <meta property="og:description" content="{{ $metaDescription }}">
+  <meta property="og:url" content="{{ $metaURL }}">
+  {{ with $metaImage }}
+    <meta property="og:image" content="{{ . }}">
+    <meta property="og:image:alt" content="{{ $metaImageAlt }}">
+  {{ end }}
+  <meta name="twitter:card" content="{{ if $metaImage }}summary_large_image{{ else }}summary{{ end }}">
+  <meta name="twitter:title" content="{{ $metaTitle }}">
+  <meta name="twitter:description" content="{{ $metaDescription }}">
+  {{ with $metaImage }}
+    <meta name="twitter:image" content="{{ . }}">
+    <meta name="twitter:image:alt" content="{{ $metaImageAlt }}">
+  {{ end }}
   <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "/index.xml" | relURL }}">
   <link rel="stylesheet" href="{{ "/css/base.css" | relURL }}">
   {{ if eq .Section "previews" }}
