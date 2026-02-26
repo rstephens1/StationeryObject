@@ -1,6 +1,6 @@
 +++
 title = "21C Hotel Bentonville"
-date = 2024-06-11
+date = 2017-08-17
 draft = false
 summary = "Stationery collection from 21C Hotel Bentonville."
 
@@ -10,6 +10,7 @@ summary = "Stationery collection from 21C Hotel Bentonville."
 src = "01-photo.jpg"
 alt = "21C Hotel Bentonville stationery image 1"
 caption = "1"
+note = "The 21c brand was built by Laura Lee Brown and Steve Wilson, and this property is best known for pairing gallery-scale installations with a serious food program at The Hive rather than old-school grand-hotel theater."
 
 [[images]]
 src = "02-photo.jpg"
@@ -30,4 +31,4 @@ caption = "4"
 
 **Year opened:** 2013
 
-The 21c brand was built by Laura Lee Brown and Steve Wilson, and this property is best known for pairing gallery-scale installations with a serious food program at The Hive rather than old-school grand-hotel theater.
+

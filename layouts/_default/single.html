@@ -3,6 +3,9 @@
   <h1>{{ .Title }}</h1>
   {{ if eq .Section "posts" }}
     <p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>
+    {{ with .Summary }}
+      <p class="post-summary">{{ . }}</p>
+    {{ end }}
   {{ end }}
 
   {{ $images := .Params.images }}

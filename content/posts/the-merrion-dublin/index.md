@@ -2,7 +2,7 @@
 title = "The Merrion Dublin"
 date = 2026-01-31
 draft = false
-summary = "Stationery collection from The Merrion Dublin."
+summary = "*One should either write a work of art, or write on a work of art.*"
 
 
 
@@ -14,6 +14,7 @@ summary = "Stationery collection from The Merrion Dublin."
 src = "01-photo.jpg"
 alt = "The Merrion Dublin stationery image 1"
 caption = "1"
+note = "The Merrion was already recommended to us as among the finest hotels in Dublin, but the stationery here is par excellence or should I say *Sár-fheabhas*. The entire kit: paper, font, cards, en folio. Even the note paper was laid. and to top it off, "
 
 [[images]]
 src = "02-photo.jpg"

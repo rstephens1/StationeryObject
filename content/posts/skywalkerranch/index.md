@@ -8,7 +8,7 @@ summary = "From a suite in Marin County far, far away..."
 src = "01-photo.jpg"
 alt = "Skywalker Ranch California stationery image 1"
 caption = "1"
-note = "I was 8 when Star Wars came out. When I received an invitation for a private event at THE Skywalker Ranch, was I going to let anything stand in my way? The birth of a child? Not likely. Th stationery"
+note = "I was 8 when Star Wars came out. When I received an invitation for a private event at *THE* Skywalker Ranch, was I going to let anything stand in my way? The birth of a child? Not likely. The stationery is fantastic."
 
 [[images]]
 src = "02-photo.jpg"
@@ -37,7 +37,7 @@ caption = "5"
 src = "06-photo.jpg"
 alt = "Skywalker Ranch California stationery image 6"
 caption = "6"
-note = "Note the deep embossing but also the subtle shadow silhouette featuring one of the buildings on the campus"
+note = "Note the the subtle shadow silhouette featuring one of the buildings on the campus"
 
 +++
 **Location:** Nicasio, California, USA

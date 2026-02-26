@@ -2,7 +2,7 @@
 title = "The Liu Ying Hangzhou"
 date = 2026-02-25
 draft = false
-summary = "Stationery collection from The Liuing Hangzhou."
+summary = "Pearls and jade are before me, but the failure of the pen is on the paper 珠玉在前，败笔在纸"
 
 [[images]]
 src = "01-photo.jpg"
